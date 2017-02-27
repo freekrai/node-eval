@@ -55,7 +55,8 @@ module.exports = function (content, filename, scope, includeGlobals) {
 
   var options = {
     filename: filename,
-    displayErrors: false
+    displayErrors: false,
+	timeout: 240000
   }
 
   if (isBuffer(content)) {
